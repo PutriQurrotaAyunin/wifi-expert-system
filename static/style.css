@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.container{
+    width: 100%;
+    max-width: 750px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+h2{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+label{
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+select{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.9);
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+select:focus{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+button{
+    width: 100%;
+    padding: 16px;
+    margin-top: 35px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.result-box{
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 25px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.result-box h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.result-box p{
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+a{
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background: rgba(255,255,255,0.2);
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+a:hover{
+    background: rgba(255,255,255,0.35);
+}
+
+.form-group{
+    margin-bottom: 18px;
+}
+
+.glow{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+}
+
+.glow1{
+    top: -50px;
+    left: -50px;
+}
+
+.glow2{
+    bottom: -50px;
+    right: -50px;
+}

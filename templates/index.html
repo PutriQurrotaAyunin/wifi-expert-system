@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistem Pakar WiFi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<div class="container">
+
+    <h1>Sistem Pakar Diagnosa WiFi</h1>
+
+    <form action="/diagnose" method="POST">
+
+        <h2>Gejala Jaringan</h2>
+        <label>G1 - Tidak Bisa Connect WiFi</label>
+        <select name="G1">
+            <option value="0">Tidak</option>
+            <option value="0.2">Sedikit Yakin</option>
+            <option value="0.4">Mungkin</option>
+            <option value="0.6">Kemungkinan Besar</option>
+            <option value="0.8">Hampir Pasti</option>
+            <option value="1">Pasti</option>
+        </select>
+
+        <label>G2 - Internet Putus-putus</label>
+        <select name="G2">
+            <option value="0">Tidak</option>
+            <option value="0.2">Sedikit Yakin</option>
+            <option value="0.4">Mungkin</option>
+            <option value="0.6">Kemungkinan Besar</option>
+            <option value="0.8">Hampir Pasti</option>
+            <option value="1">Pasti</option>
+        </select>
+
+        <label>G3 - Internet Lambat</label>
+        <select name="G3">
+            <option value="0">Tidak</option>
+            <option value="0.2">Sedikit Yakin</option>
+            <option value="0.4">Mungkin</option>
+            <option value="0.6">Kemungkinan Besar</option>
+            <option value="0.8">Hampir Pasti</option>
+            <option value="1">Pasti</option>
+        </select>
+
+        <label>G4 - DNS Error</label>
+        <select name="G4">
+            <option value="0">Tidak</option>
+            <option value="0.2">Sedikit Yakin</option>
+            <option value="0.4">Mungkin</option>
+            <option value="0.6">Kemungkinan Besar</option>
+            <option value="0.8">Hampir Pasti</option>
+            <option value="1">Pasti</option>
+        </select>
+
+        <label>G5 - Semua Device Terdampak</label>
+        <select name="G5">
+            <option value="0">Tidak</option>
+            <option value="0.2">Sedikit Yakin</option>
+            <option value="0.4">Mungkin</option>
+            <option value="0.6">Kemungkinan Besar</option>
+            <option value="0.8">Hampir Pasti</option>
+            <option value="1">Pasti</option>
+        </select>
+
+        <label>G6 - Router Mati / Lampu Merah</label>
+        <select name="G6">
+            <option value="0">Tidak</option>
+            <option value="0.2">Sedikit Yakin</option>
+            <option value="0.4">Mungkin</option>
+            <option value="0.6">Kemungkinan Besar</option>
+            <option value="0.8">Hampir Pasti</option>
+            <option value="1">Pasti</option>
+        </select>
+
+        <h2>Riwayat</h2>
+        <label>Pernah Ubah Konfigurasi?</label>
+        <select name="R1">
+            <option value="tidak">Tidak Pernah</option>
+            <option value="pernah">Pernah</option>
+        </select>
+
+        <label>Ada Gangguan ISP?</label>
+        <select name="R2">
+            <option value="tidak">Tidak Pernah</option>
+            <option value="pernah">Pernah</option>
+        </select>
+
+        <button type="submit">Diagnosa Sekarang</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

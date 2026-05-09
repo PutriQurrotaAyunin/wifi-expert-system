@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Diagnosa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<div class="container">
+    <h1>Hasil Diagnosa</h1>
+    <div class="result-box">
+        <h2>{{ diagnosa }}</h2>
+        <p>Tingkat Gejala: <b>{{ gejala }}</b></p>
+        <p>Status Riwayat: <b>{{ riwayat }}</b></p>
+        <p>Rule Digunakan: <b>{{ rule_used }}</b></p>
+        <p>Tingkat Kepercayaan:</p>
+        <h2>{{ confidence }}%</h2>
+        <br>
+        <p>Solusi:</p>
+        <p><b>{{ solusi }}</b></p>
+    </div>
+    <a href="/">Kembali</a>
+</div>
+
+</body>
+</html>
